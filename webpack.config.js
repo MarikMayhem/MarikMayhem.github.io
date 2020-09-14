@@ -1,6 +1,10 @@
 var path = require('path')
 var webpack = require('webpack')
 
+function resolve(dir){
+	return path.join(__dirname,dir)
+}
+
 module.exports = {
   entry: './src/main.js',
   output: {
@@ -58,7 +62,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+		include: [resolve('src'), resolve('test'), resolve('node_modules/vue-particles')]
       },
       {
         test: /\.(png|jpg|gif|svg|woff|woff2|eot|ttf|otf)$/,
