@@ -74,6 +74,7 @@ h1 {
   padding: 16px;
   margin: 24px auto;
   width: fit-content;
+  width: -moz-fit-content;
   text-align: initial;
   color: white;
   text-decoration: none;
