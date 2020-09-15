@@ -121,7 +121,7 @@ export default {
   }
   .inner-container-section {
     font-family: "Homizio-Medium";
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -131,8 +131,14 @@ export default {
     .description {
       margin-top: 10%;
       text-align: left;
+      flex-wrap: wrap;
       .my-description {
         font-size: 24px;
+        width: 55%;
+        margin: 10px auto;
+        @include tablet {
+          width: 90%;
+        }
       }
     }
     .personal {
@@ -212,7 +218,9 @@ export default {
       flex-shrink: 0;
       height: calc(150px + 4vw);
       width: calc(150px + 4vw);
-      margin: 25px;
+
+      margin: 32px auto;
+
       background-image: linear-gradient(
         to bottom right,
         #393f4d,

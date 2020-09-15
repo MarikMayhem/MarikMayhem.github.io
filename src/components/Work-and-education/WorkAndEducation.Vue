@@ -48,7 +48,10 @@
           <p
             class="experience-description"
           >I chose Softuni because in a way it was an alternative to the traditional education. Here I created real console applications using C#. It got really interesting to me. When I was introduced to front end development there I really liked it and JS grabbed my attention.</p>
-          <b>(C#, JavaScript,Jquery,React,Angular,Express,HTML,CSS,SASS,LESS)</b>
+          <b>
+            (C#, JavaScript,Jquery,React,
+            <br />Angular, Express, HTML, CSS, SASS, LESS)
+          </b>
         </div>
         <div class="experience-wrapper">
           <p
