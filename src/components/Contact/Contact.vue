@@ -1,8 +1,13 @@
 <template>
   <div class="container-wrapper">
     <h2 data-aos="fade-up" data-aos-delay="200" class="head-title">Contact Me</h2>
-    <h3 class="my-description">Want to work with me? Send me Email:</h3>
-    <form class="contact-form" @submit.prevent="sendEmail">
+    <h3 data-aos="fade-down" class="my-description">Want to work with me? Send me Email:</h3>
+    <form
+      data-aos="flip-down"
+      data-aos-delay="500"
+      class="contact-form"
+      @submit.prevent="sendEmail"
+    >
       <input
         v-model="emailForm.user_name"
         placeholder="Name"

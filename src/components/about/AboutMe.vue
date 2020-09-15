@@ -2,7 +2,7 @@
   <div class="container-wrapper">
     <!-- Gets transition type and transition delay -->
     <h3 data-aos="fade-up" data-aos-delay="200" class="head-title">About Me</h3>
-    <div class="change-tabs">
+    <div data-aos="fade-down" class="change-tabs">
       <ul>
         <li
           :class="(toggle === 'professional')?'highlight-color':''"
@@ -15,13 +15,13 @@
       </ul>
     </div>
     <section v-if="toggle === 'personal'" class="inner-container-section">
-      <div data-aos="fade-up" data-aos-delay="500" class="left personal">
+      <div data-aos="fade-right" data-aos-delay="500" class="left personal">
         <img class="personal-img" src="../../assets/images/personal/rings.png" alt />
         <p
           class="my-description"
         >In my free time i clear my mind up by doing Calistenics. Bodyweight training is great and enjoyable. The way i train is by using the olympic rings.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="500" class="right personal">
+      <div data-aos="fade-left" data-aos-delay="500" class="right personal">
         <div class="shape-outer-circle circle personal-img">
           <div class="shape-inner-circle circle"></div>
         </div>
@@ -32,7 +32,7 @@
     </section>
 
     <section v-if="toggle === 'professional'" class="inner-container-section">
-      <div data-aos="fade-up" data-aos-delay="500" class="left description">
+      <div data-aos="fade-right" data-aos-delay="500" class="left description">
         <div class="shape-outer parallelogram">
           <div class="shape-inner parallelogram"></div>
         </div>
@@ -41,7 +41,7 @@
         >I really strive for things that interest me. In my professional career that new thing is Vue.js. I enjoy working with it and getting challenged at every day basis. I also enjoy JavaScript alot and scss styling. Animations are also a new thing that got my interest.</p>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="500" class="right">
+      <div data-aos="fade-left" data-aos-delay="500" class="right">
         <p>My current Stack</p>
         <div class="stacks">
           <img class="stack" src="../../assets/images/stack/vuejs.png" alt="vue" />

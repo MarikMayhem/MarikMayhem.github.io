@@ -6,7 +6,7 @@
     </h3>
 
     <section class="inner-container-section">
-      <div data-aos="fade-up" data-aos-delay="500" class="left-work left">
+      <div data-aos="zoom-in" data-aos-delay="800" class="left-work left">
         <h4 class="mini-title">Work Experience</h4>
         <div class="experience-wrapper">
           <p
@@ -41,7 +41,7 @@
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="500" id="right-education" class="right">
+      <div data-aos="zoom-out" data-aos-delay="800" id="right-education" class="right">
         <h4 class="mini-title">Education</h4>
         <div class="experience-wrapper">
           <p class="mini-sub-title">Software University (Sofia) 2016-2018</p>
