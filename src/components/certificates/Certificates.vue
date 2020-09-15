@@ -2,7 +2,7 @@
   <div class="container-wrapper">
     <h3 data-aos="fade-up" data-aos-delay="200" class="head-title">Certificates</h3>
     <section class="certificate-wrapper">
-      <div class="change-tabs">
+      <div data-aos="fade-down" class="change-tabs">
         <ul>
           <li :class="(toggle === 'udemy')?'highlight-color':''" @click="toggle = 'udemy'">Udemy</li>
           <li
@@ -11,11 +11,9 @@
           >Softuni</li>
         </ul>
       </div>
-      <div class="certificates">
-        <div
-          v-if="toggle === 'udemy'"
-          class="animate__animated animate__zoomInUp udemy certificate-container"
-        >
+      <div data-aos="flip-up" data-aos-delay="700" class="certificates">
+        <!-- <div class="certificates"> -->
+        <div v-if="toggle === 'udemy'" class="udemy certificate-container">
           <a
             class="certificate"
             href="https://www.udemy.com/certificate/UC-f97935bc-f3cc-4b70-afc3-28a6a8ae0264/"
@@ -23,10 +21,7 @@
             <img src="../../assets/images/certificates/Udemy-Vuejs.jpg" />
           </a>
         </div>
-        <div
-          v-if="toggle === 'softuni'"
-          class="animate__animated animate__zoomInUp softuni certificate-container"
-        >
+        <div v-if="toggle === 'softuni'" class="softuni certificate-container">
           <a class="certificate" href="https://softuni.bg/certificates/details/24669/03a26d26">
             <img src="../../assets/images/certificates/WebFundamentals2017.png" />
           </a>

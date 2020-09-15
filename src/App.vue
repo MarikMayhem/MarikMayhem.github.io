@@ -72,6 +72,7 @@ body {
   height: 100%;
   font-family: "Bebas Kai";
   letter-spacing: 6px;
+  overflow-x: hidden;
 }
 #app {
   font-weight: normal;
