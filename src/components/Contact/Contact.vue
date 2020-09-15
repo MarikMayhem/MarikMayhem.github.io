@@ -85,6 +85,16 @@ export default {
 };
 </script>
 <style lang="scss">
+@mixin phone {
+  @media (max-width: 415px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
 #submitDisabled:disabled:hover {
   background-color: none;
 }
@@ -98,6 +108,11 @@ export default {
   flex-direction: column;
   width: 40%;
   margin: 60px auto;
+
+  @include tablet {
+    width: 80%;
+  }
+
   .input {
     height: 30px;
   }
@@ -108,8 +123,7 @@ export default {
     height: 150px;
   }
   .submit {
-    width: 20%;
-    padding: 11px;
+    padding: 11px 20px;
     transition: background, 0.5s;
     background: none;
     border: 1px solid white;
