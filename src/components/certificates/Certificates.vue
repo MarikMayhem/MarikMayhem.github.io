@@ -12,7 +12,6 @@
         </ul>
       </div>
       <div data-aos="flip-up" data-aos-delay="700" class="certificates">
-        <!-- <div class="certificates"> -->
         <div v-if="toggle === 'udemy'" class="udemy certificate-container">
           <a
             class="certificate"
