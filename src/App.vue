@@ -14,8 +14,8 @@ import Home from "./components/home/AppHome";
 import Footer from "./components/layout/AppFooter";
 import AboutMe from "./components/about/AboutMe";
 import Certificates from "./components/certificates/Certificates";
-import WorkAndEducation from "./components/Work-and-education/WorkAndEducation";
-import Contact from "./components/Contact/Contact";
+import WorkAndEducation from "./components/work-and-education/WorkAndEducation";
+import Contact from "./components/contact/Contact";
 
 export default {
   name: `app`,
@@ -27,81 +27,8 @@ export default {
     WorkAndEducation,
     Certificates,
   },
-  data() {
-    return {
-      scrollTop: false,
-    };
-  },
 };
 </script>
 
-<style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+<style src="./App.scss" lang="scss" />
 
-@font-face {
-  font-family: "Bebas Kai";
-  src: url(assets/fonts/BebasKai.eot); /* IE9+ Compat Modes */
-  src: url(assets/fonts/BebasKai.eot?#iefix) format("embedded-opentype"),
-    /* IE6-IE8 */ url(assets/fonts/BebasKai.woff2) format("woff2"),
-    /* Super modern browsers */ url(assets/fonts/BebasKai.woff) format("woff"),
-    /* Modern browsers */ url(assets/fonts/BebasKai.ttf) format("truetype"),
-    /* Safari, Android, iOS */ url(assets/fonts/BebasKai.svg#FontName)
-      format("svg"); /* Legacy iOS */
-}
-@font-face {
-  font-family: "Homizio-Medium";
-  src: url(assets/fonts/Homizio-Medium.eot); /* IE9+ Compat Modes */
-  src: url(assets/fonts/Homizio-Medium.eot?#iefix) format("embedded-opentype"),
-    /* IE6-IE8 */ url(assets/fonts/Homizio-Medium.woff2) format("woff2"),
-    /* Super modern browsers */ url(assets/fonts/Homizio-Medium.woff)
-      format("woff"),
-    /* Modern browsers */ url(assets/fonts/Homizio-Medium.ttf)
-      format("truetype"),
-    /* Safari, Android, iOS */ url(assets/fonts/Homizio-Medium.svg#FontName)
-      format("svg"); /* Legacy iOS */
-}
-@mixin phone {
-  @media (max-width: 415px) {
-    @content;
-  }
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: "Bebas Kai";
-  letter-spacing: 6px;
-  overflow-x: hidden;
-}
-#app {
-  font-weight: normal;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #d4d4dc;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-h1,
-h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-</style>

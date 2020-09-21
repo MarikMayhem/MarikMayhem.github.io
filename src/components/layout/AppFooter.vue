@@ -26,35 +26,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.footer-wrapper {
-  position: relative;
-  border-top: 1px solid #d4d4dc;
-  background-color: #393f4d;
-  .back-to-top {
-    cursor: pointer;
-    border: none;
-    font-size: 40px;
-    height: 50px;
-    border-radius: 6px;
-    color: #393f4d;
-    position: absolute;
-    top: -61px;
-    left: 0;
-    right: 0;
-    margin: auto;
-
-    &:hover {
-      background-color: #feda6a;
-      transition: background-color, 0.5s;
-    }
-  }
-  .social-media {
-    margin: 30px;
-    .social-icon {
-      height: 40px;
-      cursor: pointer;
-    }
-  }
-}
-</style>
+<style src="./AppFooter.scss" scoped lang="scss" />
