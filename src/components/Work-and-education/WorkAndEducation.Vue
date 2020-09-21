@@ -65,40 +65,10 @@
       </div>
     </section>
   </div>
-</template>
+</template>>
+
 
 <script>
 </script>
 
-<style scoped lang="scss">
-.span-education {
-  color: #393f4d;
-}
-.experience-wrapper {
-  border-bottom: 1px solid #d4d4dc;
-  padding: 20px 0;
-}
-.left-work {
-  color: #d4d4dc;
-}
-
-#right-education {
-  color: #393f4d;
-  margin-top: 0;
-  .experience-wrapper {
-    border-bottom: 1px solid #393f4d;
-    padding: 20px 0;
-  }
-}
-
-.experience-description {
-  text-align: start;
-}
-.left {
-  display: flex;
-  flex-direction: column;
-}
-.mini-title {
-  font-size: 29px;
-}
-</style>
+<style src="./WorkAndEducation.scss" scoped lang="scss"/>

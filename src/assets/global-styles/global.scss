@@ -1,0 +1,85 @@
+@import "./mixins.scss";
+@import "./colors.scss";
+
+.container-wrapper {
+    letter-spacing: 0;
+    background: linear-gradient(to right, rgba(57, 63, 77, 1), rgba(29, 30, 34, 1));
+    background-size: cover;
+    color: $silver-fox;
+    padding-bottom: 100px;
+    //Work And Education
+    &:nth-child(3) {
+        background: linear-gradient(to right, $dark-slate, $deep-matte-grey, $are-ya-yellow, $are-ya-yellow);
+        font-weight: bold;
+        font-size: 19px;
+        border-top: 5px solid $silver-fox;
+        border-bottom: 5px solid $silver-fox;
+        @include tablet {
+            background: linear-gradient($dark-slate, $deep-matte-grey, $are-ya-yellow, $are-ya-yellow);
+        }
+    }
+    .head-title {
+        color: $are-ya-yellow;
+        font-size: 50px;
+        margin-top: 6%;
+        margin-bottom: 2%;
+    }
+    .change-tabs {
+        li {
+            cursor: pointer;
+        }
+        .highlight-color {
+            color: $are-ya-yellow;
+            font-size: 20px;
+        }
+    }
+
+    .inner-container-section {
+        font-family: "Homizio-Medium";
+        max-width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        @include tablet {
+            flex-direction: column;
+        }
+
+        .left {
+            display: flex;
+            width: 50%;
+
+            @include tablet {
+                margin: 0 auto;
+                width: 90%;
+            }
+        }
+        .right {
+            width: 45%;
+            margin-left: auto;
+            margin: auto;
+            @include tablet {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .stacks {
+                display: flex;
+                flex-wrap: wrap;
+                .stack {
+                    width: 20%;
+                    padding: 10px;
+                    margin: auto;
+                }
+            }
+            .second-stacks {
+                display: flex;
+                flex-wrap: wrap;
+                .second-stack {
+                    width: 40%;
+                    padding: 10px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

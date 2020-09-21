@@ -1,0 +1,69 @@
+@import "../../assets/global-styles/mixins.scss";
+@import "../../assets/global-styles/colors.scss";
+@import "../../assets/global-styles/global.scss";
+
+.personal-img {
+    height: 60%;
+    width: 45%;
+    margin: 5% auto;
+}
+.description {
+    margin-top: 10%;
+    text-align: left;
+    flex-wrap: wrap;
+    .my-description {
+        font-size: 24px;
+        width: 55%;
+        margin: 10px auto;
+        @include tablet {
+            width: 90%;
+        }
+    }
+}
+.personal {
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+}
+.parallelogram {
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.circle {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+.shape-inner-circle {
+    height: calc(200px + 4vw);
+    width: calc(200px + 4vw);
+    background: url(../../assets/images/personal/me.jpg) no-repeat center;
+    background-size: cover;
+    margin: auto;
+}
+.shape-outer-circle {
+    display: flex;
+    flex-shrink: 0;
+    height: calc(230px + 4vw);
+    width: calc(230px + 4vw);
+    width: calc(230px + 4vw);
+    margin: 0px auto 32px;
+    background-image: linear-gradient(to bottom right, $deep-matte-grey, $are-ya-yellow, $dark-slate);
+}
+.shape-outer {
+    display: flex;
+    flex-shrink: 0;
+    height: calc(150px + 4vw);
+    width: calc(150px + 4vw);
+
+    margin: 32px auto;
+
+    background-image: linear-gradient(to bottom right, $deep-matte-grey, $are-ya-yellow, $dark-slate);
+}
+
+.shape-inner {
+    height: calc(130px + 4vw);
+    width: calc(130px + 4vw);
+    background: url(../../assets/my-photo.jpg) no-repeat center;
+    background-size: cover;
+    margin: auto;
+}

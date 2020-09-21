@@ -1,0 +1,34 @@
+@import "../../assets/global-styles/mixins.scss";
+@import "../../assets/global-styles/colors.scss";
+@import "../../assets/global-styles/global.scss";
+
+.footer-wrapper {
+    position: relative;
+    border-top: 1px solid $silver-fox;
+    background-color: $deep-matte-grey;
+    .back-to-top {
+        cursor: pointer;
+        border: none;
+        font-size: 40px;
+        height: 50px;
+        border-radius: 6px;
+        color: $deep-matte-grey;
+        position: absolute;
+        top: -61px;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        &:hover {
+            background-color: $are-ya-yellow;
+            transition: background-color, 0.5s;
+        }
+    }
+    .social-media {
+        margin: 30px;
+        .social-icon {
+            height: 40px;
+            cursor: pointer;
+        }
+    }
+}

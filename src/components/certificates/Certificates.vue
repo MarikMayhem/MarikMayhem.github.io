@@ -52,44 +52,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@mixin phone {
-  @media (max-width: 415px) {
-    @content;
-  }
-}
-@mixin tablet {
-  @media (max-width: 1024px) {
-    @content;
-  }
-}
-//Global
-.change-tabs {
-  li {
-    cursor: pointer;
-  }
-  .highlight-color {
-    color: #feda6a;
-    font-size: 20px;
-  }
-}
-.certificate-wrapper {
-  .certificates {
-    .certificate-container {
-      width: 70%;
-      margin: auto;
-      @include tablet {
-        width: 90%;
-      }
-      .certificate {
-        img {
-          height: 350px;
-          @include tablet {
-            height: 258px;
-          }
-        }
-      }
-    }
-  }
-}
-</style>
+<style src="./Certificates.scss" scoped lang="scss">
